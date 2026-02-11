@@ -25,14 +25,8 @@ This calculator provides a clean interface for students to track their academic 
 * **Current GPA:** Calculated as a weighted average based on credits and grade points for the current semester.
 * **Final CGPA:** Calculated as a simple average of all individual semester GPAs entered.
 
-## 🚀 How to Run Locally
-
-1.  Clone the repository:
-    ```bash
-    git clone [https://github.com/your-username/cgpa-calculator.git](https://github.com/your-username/cgpa-calculator.git)
-    ```
-2.  Navigate to the project directory.
-3.  Open the `index.html` file in any web browser.
+## Link 
+__
 
 ## 📄 License
 
