@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Average CGPA Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1><i class="fa-solid fa-calculator"></i> CGPA Calculator</h1>
+            <p>Logic: Average of Semester GPAs</p>
+        </header>
+
+        <div class="main-card">
+            
+            <div class="section-header icon-header">
+                <i class="fa-solid fa-book-open accent-icon"></i>
+                <h3>Current Semester Subjects</h3>
+            </div>
+            <p class="helper-text">Enter subjects to calculate current semester's GPA.</p>
+            
+            <div id="course-wrapper">
+                </div>
+
+            <div class="controls">
+                <button id="add-course-btn" class="btn btn-secondary">
+                    <i class="fa-solid fa-plus"></i> Add Subject
+                </button>
+            </div>
+
+            <hr class="divider">
+
+            <div class="previous-data-section">
+                <div class="section-header icon-header">
+                    <i class="fa-solid fa-history accent-icon"></i>
+                    <h3>Previous Semesters' GPAs</h3>
+                </div>
+                 <p class="helper-text">Add the GPA for each past semester individually.</p>
+                 
+                <div id="prev-gpa-wrapper">
+                    </div>
+
+                <div class="controls" style="margin-top: 15px;">
+                    <button id="add-prev-gpa-btn" class="btn btn-secondary">
+                        <i class="fa-solid fa-plus"></i> Add Past Semester GPA
+                    </button>
+                </div>
+            </div>
+
+            <hr class="divider">
+
+            <div class="action-buttons">
+                <button id="reset-btn" class="btn btn-danger">
+                    <i class="fa-solid fa-rotate-right"></i> Reset
+                </button>
+                <button id="calc-gpa-btn" class="btn btn-secondary" style="flex-grow: 2;">
+                    Calculate Current GPA
+                </button>
+                <button id="calc-cgpa-btn" class="btn btn-primary" style="flex-grow: 3;">
+                    Calculate Final CGPA
+                </button>
+            </div>
+
+
+            <div class="results-container" id="results-container" style="display: none;">
+                <div class="result-box gpa-box" id="gpa-result-box" style="display: none;">
+                    <h3>Current Semester GPA</h3>
+                    <span id="current-gpa-score">0.00</span>
+                </div>
+                <div class="result-box cgpa-box" id="cgpa-result-box" style="display: none;">
+                    <h3>Final Average CGPA</h3>
+                    <span id="final-cgpa-score">0.00</span>
+                    <small>(Average of all semesters)</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
