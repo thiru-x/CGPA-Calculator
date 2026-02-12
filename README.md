@@ -25,8 +25,9 @@ This calculator provides a clean interface for students to track their academic 
 * **Current GPA:** Calculated as a weighted average based on credits and grade points for the current semester.
 * **Final CGPA:** Calculated as a simple average of all individual semester GPAs entered.
 
-## Link 
-__
+## Link to Explore: 
+
+https://tgcgpa.netlify.app/
 
 ## 📄 License
 
